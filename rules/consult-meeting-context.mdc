@@ -1,0 +1,26 @@
+---
+description: Consult Spinach meeting history for context when the user references prior discussions, decisions, or commitments before answering or implementing.
+alwaysApply: false
+---
+
+# Consult meeting context before acting
+
+When the user references something that probably came up in a meeting, check Spinach **before** implementing or answering. Cues that should trigger a Spinach lookup:
+
+- Decisions or alignment ("we decided", "we agreed", "the plan is")
+- Past discussions ("we talked about", "remember when", "as discussed")
+- Prior commitments ("I said I'd", "Lucas was going to", "my action item")
+- Recurring meetings ("standup", "PR review", "weekly sync")
+- Recent timeframe references ("yesterday", "last week", "this morning")
+
+## How to look it up
+
+- Pick the right tool with the `find-meeting-context` skill — `search_meetings` for concepts/specifics, `list_meetings` for known titles, `list_collections` for curated sets.
+- Always start with summaries (`include: ["summary", "action_items", "decisions"]`); only request transcripts when summaries are insufficient.
+- Cite the meeting title, date, and URL when you ground a recommendation in meeting content.
+
+## What not to do
+
+- Don't fabricate meeting context if Spinach returns nothing — say so and proceed with the user's stated intent.
+- Don't paste meeting content into commit messages, public PRs, external chat, or other places where the meeting URL ACL doesn't apply.
+- Don't dump full transcripts into the chat; summarize and link the meeting URL instead.
