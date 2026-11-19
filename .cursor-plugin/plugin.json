@@ -1,16 +1,19 @@
 {
   "name": "spinach",
   "displayName": "Spinach",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "minClientVersions": {
+    "cursor": "3.13.0"
+  },
   "description": "Give Cursor agents access to your meeting history. Search transcripts, fetch summaries, action items and decisions, and read live meeting captions via the Spinach MCP server.",
   "author": {
     "name": "Spinach AI",
     "email": "support@spinach.ai"
   },
   "homepage": "https://spinach.ai",
-  "repository": "https://github.com/spinachio/spinach-ai-cursor-plugin",
+  "repository": "https://github.com/Meet-Spinach/spinach-ai-cursor-plugin",
   "license": "MIT",
-  "logo": "assets/logo.svg",
+  "logo": "assets/logo.png",
   "keywords": [
     "spinach",
     "meetings",
@@ -20,7 +23,7 @@
     "mcp",
     "context"
   ],
-  "category": "productivity",
+  "category": "integrations",
   "tags": [
     "meetings",
     "transcripts",

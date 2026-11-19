@@ -1,7 +1,9 @@
 {
   "mcpServers": {
     "spinach": {
-      "url": "https://mcp.spinach.ai/mcp"
+      "type": "http",
+      "url": "https://mcp.spinach.ai/mcp",
+      "placement": "server"
     }
   }
 }
